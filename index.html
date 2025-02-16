@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A book review blog for kids and young readers.">
+    <meta name="author" content="Your Name">
+    <title>Kids Read For Fun</title>
+    <link rel="stylesheet" href="blog.css">
+    <script defer src="blog.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Kids Read For Fun</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search books...">
+            <button id="search-btn">Go</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="filter-section">
+            <label for="filter-genre">Filter by Genre:</label>
+            <select id="filter-genre">
+                <option value="all">All</option>
+                <option value="apocalyptic">Apocalyptic</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+        </section>
+        
+        <section class="book-list">
+            <article class="book" data-title="tom clancy's the divion: recruited" data-genre="apocalyptic">
+                <aside class="book-details">
+                    <p>February 1, 2022</p>
+                    <p>Age Range: 16-18</p>
+                    <p>Genre: Apocalyptic</p>
+                </aside>
+                <img src="the-division.jpg" alt="The Division Book Cover">
+                <div class="book-description">
+                    <h2>Tom Clancy's The Division: Recruited</h2>
+                    <p>Set in the world of Tom Clancy’s The Division...</p>
+                </div>
+            </article>
+
+            <article class="book" data-title="star wars: the old republic: revan" data-genre="sci-fi">
+                <aside class="book-details">
+                    <p>November 15, 2011</p>
+                    <p>Age Range: 9-12</p>
+                    <p>Genre: Sci-Fi</p>
+                </aside>
+                <img src="revan.jpeg" alt="Revan Book Cover">
+                <div class="book-description">
+                    <h2>Star Wars: The Old Republic: Revan</h2>
+                    <p>Set in the expansive Star Wars: The Old Republic universe...</p>
+                </div>
+            </article>
+
+            <article class="book" data-title="rangers apprentice: the ruins of gorlan" data-genre="fantasy">
+                <aside class="book-details">
+                    <p>June 26, 1997</p>
+                    <p>Age Range: 9-12</p>
+                    <p>Genre: Fantasy</p>
+                </aside>
+                <img src="rangers-apprentice.jpeg" alt="Rangers Apprentice Book Cover">
+                <div class="book-description">
+                    <h2>Rangers Apprentice: The Ruins of Gorlan</h2>
+                    <p>The first book in the Ranger’s Apprentice series...</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
